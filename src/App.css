@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 30px 0;
+  font-size: 50px;
+  letter-spacing: 10px;
+  color: lightgray;
+  font-weight: 100;
+}
+
+h3 {
+  color: rgb(255, 153, 0);
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  width: 80%;
+  margin: 0 auto 50px auto;
+}
+
+[type="checkbox"] {
+  -webkit-appearance: none;
+}
+
+[type="checkbox"] + label::before {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  border: 1px solid crimson;
+  display: block;
+  content: "";
+  float: left;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background-color: crimson;
+}
+
+.to-do-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do-form input {
+  border: none;
+  border-bottom: 1px solid rgb(255, 153, 0);
+  padding: 10px 20px;
+  font-size: x-large;
+  text-align: center;
+}
+
+.to-do-form input::placeholder {
+  text-align: center;
+  color: rgba(255, 153, 0, 0.352);
+}
+
+.to-do-list {
+  margin: 50px 20px 80px 20px;
+  padding: 20px;
+  border: 1px solid rgb(255, 153, 0);
+}
+
+.to-do-list p {
+  line-height: 30px;
+  display: inline-block;
+}
+
+.to-do-list button {
+  border: none;
+  background-color: transparent;
+  position: fixed;
+  right: 50px;
+}
+
+.done p {
+  color: crimson;
+}
+
+.p-tag::before {
+  content: "● ";
+}
+.filter {
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-button {
+  border: 1px solid crimson;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: crimson;
+  color: white;
+  margin: 50px 10px 0 10px;
+}
+
+.theme {
+  text-align: end;
+  padding-right: 20px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+.dark {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  height: 100vh;
+}
+
+.dark input {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.dark select {
+  color: white;
+}
+
+.big-form input:first-of-type {
+  margin-top: -30px;
+}
+
+.big-form input {
+  border: none;
+  border: 1px solid rgb(255, 153, 0);
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: large;
+  display: block;
+  margin: 0 auto 5px auto;
+  text-align: center;
+  width: 80%;
+}
+
+.big-form input::placeholder {
+  text-align: center;
+  color: rgba(255, 153, 0, 0.352);
+}
+
+.select-div {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.big-form select {
+  background-color: transparent;
+  border: 1px solid rgb(255, 153, 0);
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding: 5px 25px;
+  text-align: center;
+}
